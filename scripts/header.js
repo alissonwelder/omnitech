@@ -7,8 +7,7 @@ window.addEventListener('scroll',toggleHeader,false)
 function toggleHeader(){
     if (window.pageYOffset > 60 && $header.classList.contains('max-header')){
         $header.classList.remove('max-header')
-        $header.classList.add('min-header')
-        $logo.firstElementChild.setAttribute('src','imgs/omnitech-logo-2.png')
+        $header.classList.add('min-header') 
         $logo.classList.remove('max-logo')
         $logo.classList.add('min-logo')
         $navBar.classList.remove('max-nav')
@@ -20,7 +19,6 @@ function toggleHeader(){
     }else if (window.pageYOffset <= 60 && $header.classList.contains('min-header')){
         $header.classList.remove('min-header')
         $header.classList.add('max-header')
-        $logo.firstElementChild.setAttribute('src','imgs/omnitech-logo-1.png')
         $logo.classList.add('max-logo')
         $logo.classList.remove('min-logo')
         $navBar.classList.add('max-nav')
